@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MyLibrary</title>
+</head>
+<body>
+    <div class="container">
+        <form  id="form" onsubmit="event.preventDefault();onFormSubmit()">
+            <h1>
+                <i class="fas fa-book-open text-primary"></i>
+                My<span class="text-primary">Book</span>List
+            </h1>
+            
+            
+            <label for="bookname"><b>Title</b></label>
+            <input type="text" placeholder="Enter Book Name" name="bookName" id="title" required>
+            
+            <label for="author"><b>author</b></label>
+            <input type="text" placeholder="Enter author" name="author" id="author" required>
+            
+            <label for="isbn"><b>ISBN</b></label>
+            <input type="text" placeholder="Enter ISBN" name="isbn" id="isbn" required>
+            
+            <div class="btn"><button id ="btn"  type="submit" class="registerbtn">Submit</button></div>
+            
+
+            
+        </form>
+    </div>
+
+    <div class="container-2" id="div1" >
+        <table class="table" id="table">
+
+            <thead class='table_head'>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                    <th>Read or Not</th>
+                </tr>
+            </thead>
+            <tbody id='tbody'>
+            </tbody>
+                           
+           
+        </table>
+    </div>
+        
+    <script src="library.js"></script>
+    <script src="https://kit.fontawesome.com/8c6e49f0fe.js" crossorigin="anonymous"></script>
+    
+        
+    
+</body>
+</html>
