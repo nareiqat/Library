@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <form  id="form" onsubmit="event.preventDefault();onFormSubmit()">
+        <form  id="form">
             <h1>
                 <i class="fas fa-book-open text-primary"></i>
                 My<span class="text-primary">Book</span>List
             </h1>
             
-            
+            <p class="alert"></p>
             <label for="bookname"><b>Title</b></label>
             <input type="text" placeholder="Enter Book Name" name="bookName" id="title" required>
             
@@ -24,15 +24,15 @@
             <label for="isbn"><b>ISBN</b></label>
             <input type="text" placeholder="Enter ISBN" name="isbn" id="isbn" required>
             
-            <div class="btn"><button id ="btn"  type="submit" class="registerbtn">Submit</button></div>
+            <div class="btn-container"><button id ="btn"  type="submit" class="btn">Submit</button></div>
             
 
             
         </form>
     </div>
 
-    <div class="container-2" id="div1" >
-        <table class="table" id="table">
+    <div class="container-2">
+        <table class="table-list">
 
             <thead class='table_head'>
                 <tr>
@@ -43,11 +43,12 @@
                     <th>Read or Not</th>
                 </tr>
             </thead>
-            <tbody id='tbody'>
+            <tbody class='book-list'>
             </tbody>
                            
            
         </table>
+        <button class="clear-btn">clear items</button>
     </div>
         
     <script src="library.js"></script>
